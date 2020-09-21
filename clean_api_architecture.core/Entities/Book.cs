@@ -1,8 +1,8 @@
+using clean_api_architecture.shared.Abstractions;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using web_api.Models.Base;
 
-namespace web_api.Models.Implementations
+namespace clean_api_architecture.core.Entities
 {
     public class Book : EntityBase
     {

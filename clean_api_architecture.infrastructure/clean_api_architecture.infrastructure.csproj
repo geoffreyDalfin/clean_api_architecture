@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\clean_api_architecture.shared\clean_api_architecture.shared.csproj" />
+    <ProjectReference Include="..\clean_api_architecture.core\clean_api_architecture.core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.8" />
+    <PackageReference Include="MongoDB.Driver" Version="2.11.2" />
+  </ItemGroup>
+</Project>

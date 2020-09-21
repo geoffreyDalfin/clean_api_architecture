@@ -1,7 +1,7 @@
 using System;
 using MongoDB.Driver;
 
-namespace web_api.Config.Database
+namespace clean_api_architecture.infrastructure.Config.Database
 {
     public class DatabaseSettings : IDatabaseSettings
     {

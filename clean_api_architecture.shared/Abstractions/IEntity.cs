@@ -1,4 +1,4 @@
-namespace web_api.Models.Base
+namespace clean_api_architecture.shared.Abstractions
 {
     public interface IEntity
     {

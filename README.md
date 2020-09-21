@@ -2,7 +2,7 @@
 
 Presentation of clean web api architecture in .net core improving of [microsoft documentation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio).
 
-This repository includes the best practices of a quality architectural realization such as the principles SOLID, DRY, repository pattern, async/await, etc..
+This repository includes the best practices of a quality architectural realization such as DDD architecture, SOLID principles, DRY, repository pattern, async/await, etc..
 
 The practices listed above are necessary to provide a quality API.
 

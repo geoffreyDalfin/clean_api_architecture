@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using web_api.Models.Base;
+using clean_api_architecture.shared.Abstractions;
 
-namespace web_api.Repositories.Abstractions
+namespace clean_api_architecture.infrastructure.Repositories.Abstractions
 {
     public interface IRepository<ClassType> where ClassType : EntityBase
     {

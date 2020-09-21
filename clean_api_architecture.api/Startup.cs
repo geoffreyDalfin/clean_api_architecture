@@ -11,10 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using web_api.Config.Database;
-using web_api.Repositories.Implementations;
+using clean_api_architecture.infrastructure.Config.Helpers;
 
-namespace web_api
+namespace clean_api_architecture.api
 {
     public class Startup
     {
@@ -28,12 +27,9 @@ namespace web_api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<DatabaseSettings>(
-                    Configuration.GetSection(nameof(DatabaseSettings)));
-            services.AddSingleton<IDatabaseSettings>(sp =>
-                    sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
-            services.AddSingleton<IBookRepository, BookRepository>();
             services.AddControllers();
+            services.AddInfrastructureService();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

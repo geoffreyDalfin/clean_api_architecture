@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using clean_api_architecture.core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using web_api.Models.Implementations;
-using web_api.Repositories.Implementations;
+using clean_api_architecture.infrastructure.Repositories.Implementations;
 
-namespace web_api.Controllers
+namespace clean_api_architecture.api.Controllers
 {
     [Route("api/v1/book")]
     [ApiController]
