@@ -21,7 +21,7 @@ namespace clean_api_architecture.api.Controllers
         }
 
         [HttpPost(Name="CreateBook")]
-        public async Task<ActionResult<Book>> CreateAsync(Book book)
+        public async Task<ActionResult<Book>> CreateAsync([FromBody] Book book)
         {
 
             await _bookRepository.CreateAsync(book);

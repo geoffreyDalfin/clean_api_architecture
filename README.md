@@ -1,4 +1,5 @@
 # Clean .net core api architecture
+![GitHub language count](https://img.shields.io/github/languages/count/geoffreyDalfin/clean_api_architecture?style=flat-square)
 
 Presentation of clean web api architecture in .net core improving of [microsoft documentation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio).
 
@@ -6,7 +7,7 @@ This repository includes the best practices of a quality architectural realizati
 
 The practices listed above are necessary to provide a quality API.
 
-- [Get started](#getting-started)
+- [Get started](#get-started)
 - [API overview](#api-overview)
 - [Fundamentals](#fundamentals)
 
@@ -48,7 +49,6 @@ During registration, you can define the lifetime of a service appropriate to our
 |Transient |Created each time they're requested from the service container |AddTransient<TAbstraction,TImplementation>
 |Scoped    |Created once per client request |AddScoped<TAbstraction,TImplementation>
 |Singleton |Created at the first time they're client requested|AddSingleton<TAbstraction,TImplementation>
-
 
 ```csharp
 //add abstraction reference in the service container
